@@ -8,3 +8,7 @@ def test_calcular_igv():
 
 def test_aplicar_descuento():
     assert aplicar_descuento(100, 10) == approx(90)
+
+def test_aplicar_recargo():
+    from calc import aplicar_recargo
+    assert aplicar_recargo(100, 10) == approx(110)

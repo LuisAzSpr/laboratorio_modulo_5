@@ -4,3 +4,7 @@ def calcular_igv(monto):
 
 def aplicar_descuento(monto, porcentaje):
     return monto * (1 - porcentaje / 100)
+
+
+def aplicar_recargo(monto, porcentaje):
+    return monto * (1 + porcentaje / 100)
