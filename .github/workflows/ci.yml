@@ -21,3 +21,6 @@ jobs:
 
       - name: Correr tests con cobertura
         run: coverage run -m pytest -v
+
+      - name: Verificar umbral de cobertura
+        run: coverage report -m --fail-under=80
